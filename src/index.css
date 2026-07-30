@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: #F8FDF9;
+  color: #0F172A;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Light Premium Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #0FB86F 0%, #00E58F 50%, #0FB86F 100%);
+}
+
+.gradient-primary-hover {
+  background: linear-gradient(135deg, #0A8B53 0%, #0FB86F 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, rgba(15, 184, 111, 0.08) 0%, rgba(0, 229, 143, 0.06) 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0A8B53 0%, #0FB86F 50%, #00C853 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card Styles */
+.premium-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+  border-color: rgba(15, 184, 111, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Bottom Nav Premium Light */
+.bottom-nav-light {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 -4px 30px rgba(0,0,0,0.08);
+}
+
+/* Scrollbar Hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Swiper Customization - Green Theme */
+.swiper-pagination-bullet {
+  background: #CBD5E1 !important;
+  opacity: 1 !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+.swiper-pagination-bullet-active {
+  background: linear-gradient(135deg, #0FB86F, #00E58F) !important;
+  width: 28px !important;
+  border-radius: 10px !important;
+}
+
+/* Modern Input */
+.input-modern {
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  transition: all 0.2s ease;
+}
+.input-modern:focus {
+  border-color: #0FB86F;
+  box-shadow: 0 0 0 4px rgba(15, 184, 111, 0.1);
+  outline: none;
+}
+
+/* Progress Bar */
+.progress-green {
+  background: linear-gradient(90deg, #0FB86F 0%, #00E58F 100%);
+}
+
+/* Animations */
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
